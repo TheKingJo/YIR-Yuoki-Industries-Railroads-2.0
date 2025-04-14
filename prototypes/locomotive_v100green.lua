@@ -1,10 +1,11 @@
+require("lib.functions")
 
 data:extend(
 {
 	-- 
 	{
 		type = "recipe",
-		name = "yir_lsw_840green_recipe",
+		name = "yir_lsw_840green",
 		category = "yir_rc_wsl", -- Workshop for Locomotives
 		enabled = "true",
 		energy_required = 5.00,
@@ -16,7 +17,8 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "yir_lsw_840green", amount = 1, },
-		},		
+		},
+		main_product = "yir_lsw_840green",
 		order = "lsw1", group = "yuoki_railway", subgroup = "yir_locomotives_nslong",
 	},	
 
@@ -205,7 +207,7 @@ data:extend(
 				}
 			},
 		},
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		working_sound =

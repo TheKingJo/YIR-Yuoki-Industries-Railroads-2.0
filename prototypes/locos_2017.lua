@@ -1,8 +1,10 @@
+require("lib.functions")
+
 data:extend(
 	{
 		{
 			type = "recipe",
-			name = "y_loco_diesel_620_recipe",
+			name = "y_loco_diesel_620",
 			category = "yir_rc_wsl", -- Workshop for Locomotives
 			enabled = "true",
 			energy_required = 5.00,
@@ -17,6 +19,7 @@ data:extend(
 			results = {
 				{type = "item", name = "y_loco_diesel_620", amount = 1.0}
 			},
+			main_product = "y_loco_diesel_620",
 			icon = "__z_yira_yuokirails__/graphics/LOK_D1_icon.png",
 			icon_size = 32,
 			order = "a9",
@@ -189,7 +192,7 @@ data:extend(
 					}
 				}
 			},
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 			working_sound = {

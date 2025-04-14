@@ -80,7 +80,7 @@ data:extend(
 			},
 			wheels = standard_train_wheels,
 			rail_category = "regular",
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			working_sound = {
 				sound = {

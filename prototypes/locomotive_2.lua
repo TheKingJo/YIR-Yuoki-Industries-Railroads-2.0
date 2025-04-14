@@ -1,9 +1,11 @@
+require("lib.functions")
+
 data:extend(
 	{
 		--
 		{
 			type = "recipe",
-			name = "yir_mre044_recipe",
+			name = "yir_mre044",
 			category = "yir_rc_wsl", -- Workshop for Locomotives
 			enabled = "true",
 			energy_required = 5.00,
@@ -16,6 +18,7 @@ data:extend(
 			results = {
 				{type = "item", name = "yir_mre044", amount = 1}
 			},
+			main_product = "yir_mre044",
 			order = "lsw1",
 			group = "yuoki_railway",
 			subgroup = "yir_locomotives_steam"
@@ -175,7 +178,7 @@ data:extend(
 					}
 				}
 			},
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 			working_sound = {
@@ -192,7 +195,7 @@ data:extend(
 		-- grüne KR-Steam-Lok
 		{
 			type = "recipe",
-			name = "yir_kr_green_recipe",
+			name = "yir_kr_green",
 			category = "yir_rc_wsl", -- Workshop for Locomotives
 			enabled = "true",
 			energy_required = 5.00,
@@ -205,6 +208,7 @@ data:extend(
 			results = {
 				{type = "item", name = "yir_kr_green", amount = 1}
 			},
+			main_product = "yir_kr_green",
 			order = "lsw7",
 			group = "yuoki_railway",
 			subgroup = "yir_locomotives_steam"
@@ -371,7 +375,7 @@ data:extend(
 					}
 				}
 			},
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 			working_sound = {
@@ -388,7 +392,7 @@ data:extend(
 		-- gelbe YI-Steam-Lok Ölfeuerung
 		{
 			type = "recipe",
-			name = "yir_loco_steam_wt580of_recipe",
+			name = "yir_loco_steam_wt580of",
 			category = "yir_rc_wsl", -- Workshop for Locomotives
 			enabled = "true",
 			energy_required = 5.00,
@@ -401,6 +405,7 @@ data:extend(
 			results = {
 				{type = "item", name = "yir_loco_steam_wt580of", amount = 1}
 			},
+			main_product = "yir_loco_steam_wt580o",
 			order = "lsw6",
 			group = "yuoki_railway",
 			subgroup = "yir_locomotives_steam"
@@ -567,7 +572,7 @@ data:extend(
 					}
 				}
 			},
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 			working_sound = {

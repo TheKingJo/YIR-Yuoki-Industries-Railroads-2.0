@@ -1,8 +1,10 @@
+require("lib.functions")
+
 data:extend(
 	{
 		{
 			type = "recipe",
-			name = "yir_cw_cargo_green_recipe",
+			name = "yir_cw_cargo_green",
 			category = "yir_rc_wsw", -- Workshop for Locomotives
 			enabled = "true",
 			energy_required = 3.00,
@@ -14,6 +16,7 @@ data:extend(
 			results = {
 				{type = "item", name = "yir_cw_cargo_green", amount = 1}
 			},
+			main_product = "yir_cw_cargo_green",
 			order = "cw1",
 			group = "yuoki_railway",
 			subgroup = "yir_tankwagons2a"
@@ -85,7 +88,7 @@ data:extend(
 			},
 			wheels = standard_train_wheels,
 			rail_category = "regular",
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			working_sound = {
 				sound = {
@@ -102,7 +105,7 @@ data:extend(
 		},
 		{
 			type = "recipe",
-			name = "yir_cw_cargo_blue_recipe",
+			name = "yir_cw_cargo_blue",
 			category = "yir_rc_wsw", -- Workshop for Locomotives
 			enabled = "true",
 			energy_required = 3.00,
@@ -114,6 +117,7 @@ data:extend(
 			results = {
 				{type = "item", name = "yir_cw_cargo_blue", amount = 1}
 			},
+			main_product = "yir_cw_cargo_blue",
 			order = "cw2",
 			group = "yuoki_railway",
 			subgroup = "yir_tankwagons2a"
@@ -185,7 +189,7 @@ data:extend(
 			},
 			wheels = standard_train_wheels,
 			rail_category = "regular",
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			working_sound = {
 				sound = {
@@ -203,7 +207,7 @@ data:extend(
 		-- 4Achs-Blau
 		{
 			type = "recipe",
-			name = "z_yira_4a_cw_yiblue_recipe",
+			name = "z_yira_4a_cw_yiblue",
 			category = "yir_rc_wsw", -- Workshop for Cargo Wagons
 			enabled = "true",
 			energy_required = 4.00,
@@ -215,6 +219,7 @@ data:extend(
 			results = {
 				{type = "item", name = "z_yira_4a_cw_yiblue", amount = 1.0}
 			},
+			main_product = "z_yira_4a_cw_yiblue",
 			order = "std-a",
 			group = "yuoki_railway",
 			subgroup = "yir_cargowagons_4A"
@@ -281,7 +286,7 @@ data:extend(
 			},
 			wheels = standard_train_wheels,
 			rail_category = "regular",
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			working_sound = {
 				sound = {
@@ -299,7 +304,7 @@ data:extend(
 		-- 4Achs-Grün ab 2020 dann gelb
 		{
 			type = "recipe",
-			name = "z_yira_4a_cw_yigreen_recipe",
+			name = "z_yira_4a_cw_yigreen",
 			category = "yir_rc_wsw", -- Workshop for Cargo Wagons
 			enabled = "true",
 			energy_required = 4.00,
@@ -311,6 +316,7 @@ data:extend(
 			results = {
 				{type = "item", name = "z_yira_4a_cw_yigreen", amount = 1.0}
 			},
+			main_product = "z_yira_4a_cw_yigreen",
 			order = "std-a",
 			group = "yuoki_railway",
 			subgroup = "yir_cargowagons_4A"
@@ -381,7 +387,7 @@ data:extend(
 			},
 			wheels = standard_train_wheels,
 			rail_category = "regular",
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			working_sound = {
 				sound = {
@@ -399,7 +405,7 @@ data:extend(
 		-- 4Achs-Kisten
 		{
 			type = "recipe",
-			name = "z_yira_4a_cw_kisten_recipe",
+			name = "z_yira_4a_cw_kisten",
 			category = "yir_rc_wsw", -- Workshop for Cargo Wagons
 			enabled = "true",
 			energy_required = 4.00,
@@ -412,6 +418,7 @@ data:extend(
 			results = {
 				{type = "item", name = "z_yira_4a_cw_kisten", amount = 1.0}
 			},
+			main_product = "z_yira_4a_cw_kisten",
 			order = "std-9a",
 			group = "yuoki_railway",
 			subgroup = "yir_cargowagons_4A"
@@ -478,7 +485,7 @@ data:extend(
 			},
 			wheels = standard_train_wheels,
 			rail_category = "regular",
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			working_sound = {
 				sound = {
@@ -496,7 +503,7 @@ data:extend(
 		-- 4Achs-Stuff
 		{
 			type = "recipe",
-			name = "z_yira_4a_cw_stuff1_recipe",
+			name = "z_yira_4a_cw_stuff1",
 			category = "yir_rc_wsw", -- Workshop for Cargo Wagons
 			enabled = "true",
 			energy_required = 4.00,
@@ -508,6 +515,7 @@ data:extend(
 			results = {
 				{type = "item", name = "z_yira_4a_cw_stuff1", amount = 1.0}
 			},
+			main_product = "z_yira_4a_cw_stuff1",
 			order = "std-9b",
 			group = "yuoki_railway",
 			subgroup = "yir_cargowagons_4A"
@@ -574,7 +582,7 @@ data:extend(
 			},
 			wheels = standard_train_wheels,
 			rail_category = "regular",
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			working_sound = {
 				sound = {

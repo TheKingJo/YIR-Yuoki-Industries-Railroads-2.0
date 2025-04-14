@@ -1,10 +1,11 @@
+require("lib.functions")
 
 data:extend(
 {
 	-- 
 	{
 		type = "recipe",
-		name = "yir_ns2200wr_recipe",
+		name = "yir_ns2200wr",
 		category = "yir_rc_wsl", -- Workshop for Locomotives
 		enabled = "true",
 		energy_required = 5.00,
@@ -16,7 +17,8 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "yir_ns2200wr", amount = 1, },
-		},		
+		},
+		main_product = "yir_ns2200wr",
 		order = "lsw1", group = "yuoki_railway", subgroup = "yir_locomotives_nslong",
 	},	
 
@@ -186,7 +188,7 @@ data:extend(
 				}
 			},
 		},
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		working_sound =
@@ -207,7 +209,7 @@ data:extend(
 	-- 
 	{
 		type = "recipe",
-		name = "yir_ns2200gg_recipe",
+		name = "yir_ns2200gg",
 		category = "yir_rc_wsl", -- Workshop for Locomotives
 		enabled = "true",
 		energy_required = 5.00,
@@ -220,7 +222,8 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "yir_ns2200gg", amount = 1, },
-		},		
+		},
+		main_product = "yir_ns2200gg",
 		order = "lsw1", group = "yuoki_railway", subgroup = "yir_locomotives_nslong",
 	},	
 
@@ -409,7 +412,7 @@ data:extend(
 				}
 			},
 		},
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		working_sound =

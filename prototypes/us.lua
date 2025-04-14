@@ -1,10 +1,11 @@
+require("lib.functions")
 
 data:extend(
 {
 	-- 
 	{
 		type = "recipe",
-		name = "yir_usl_recipe",
+		name = "yir_usl",
 		category = "yir_rc_wsl", -- Workshop for Locomotives
 		enabled = "true",
 		energy_required = 5.00,
@@ -15,7 +16,8 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "yir_usl", amount = 1, },
-		},		
+		},
+		main_product = "yir_usl",
 		order = "lsw1", group = "yuoki_railway", subgroup = "yir_yuoki_rails_locos",
 	},	
 
@@ -166,7 +168,7 @@ data:extend(
 				}
 			},
 		},
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		working_sound =
@@ -185,7 +187,7 @@ data:extend(
 	
 	{
 		type = "recipe",
-		name = "yir_us_cargo_recipe",
+		name = "yir_us_cargo",
 		category = "yir_rc_wsw", -- Workshop for Locomotives
 		enabled = "true",
 		energy_required = 3.00,
@@ -197,7 +199,8 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "yir_us_cargo", amount = 1, },
-		},		
+		},
+		main_product = "yir_us_cargo",
 		order = "cw1", group = "railway_addons", subgroup = "yir_yuoki_rails_locos",
 	},	
 
@@ -284,7 +287,7 @@ data:extend(
 		wheels = no_wheels,
 		
 		rail_category = "regular",
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound =
 		{

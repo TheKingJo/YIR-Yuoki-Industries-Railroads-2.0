@@ -1,3 +1,4 @@
+require("lib.functions")
 
 data:extend(
 {
@@ -16,7 +17,8 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "z_yira_4a_cw_steel", amount = 1.0, },
-		},	  
+		},
+		main_product = "z_yira_4a_cw_steel",
 		order = "std-a", group = "yuoki_railway", subgroup = "yir_cargowagons_4A",
 	},
 
@@ -75,7 +77,7 @@ data:extend(
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound =
 		{
