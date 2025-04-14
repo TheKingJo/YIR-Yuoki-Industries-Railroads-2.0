@@ -7,7 +7,7 @@ data:extend(
 		type = "recipe",
 		name = "yir_lsw_840green",
 		category = "yir_rc_wsl", -- Workshop for Locomotives
-		enabled = "true",
+		enabled = true,
 		energy_required = 5.00,
 		ingredients = {			
 			{ type = "item", name = "yir_frame_loco_diesel" , amount = 2.0, },			
@@ -59,9 +59,10 @@ data:extend(
 			{type = "impact",decrease = 50,percent = 60},
 		},
 	
-		burner =
+		energy_source =
 		{
-			fuel_category = "yr_diesel",
+			type = "burner",
+			fuel_categories = {"yr_diesel"},
 			effectivity = 1,
 			fuel_inventory_size = 3,
 			smoke =
@@ -136,6 +137,7 @@ data:extend(
 		
 		pictures =
 		{
+			rotated = {
 			priority = "very-low",
 			width = 512, height = 512, direction_count = 128, line_length = 4, lines_per_file = 4,
 			filenames =
@@ -152,16 +154,17 @@ data:extend(
 			scale = 0.5,			
 			shift = {0.42, -1.125}
 		},
+		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 		  flags = {"icon"},
 		  size = {20, 40},
 		  scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 		  flags = {"icon"},
 		  size = {20, 40},
 		  scale = 0.5

@@ -7,7 +7,7 @@ data:extend(
 			type = "recipe",
 			name = "yir_mre044",
 			category = "yir_rc_wsl", -- Workshop for Locomotives
-			enabled = "true",
+			enabled = true,
 			energy_required = 5.00,
 			ingredients = {
 				{type = "item", name = "steam-engine", amount = 2.0},
@@ -65,8 +65,9 @@ data:extend(
 				{type = "physical", decrease = 15, percent = 30},
 				{type = "impact", decrease = 50, percent = 60}
 			},
-			burner = {
-				fuel_category = "chemical",
+			energy_source = {
+				type = "burner",
+				fuel_categories = {"chemical"},
 				effectivity = 1,
 				fuel_inventory_size = 2,
 				smoke = {
@@ -117,6 +118,7 @@ data:extend(
 			--back_light = rolling_stock_back_light(),
 			--stand_by_light = rolling_stock_stand_by_light(),
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 256,
 				height = 256,
@@ -129,14 +131,15 @@ data:extend(
 				lines_per_file = 8,
 				shift = {0.42, -1.125}
 			},
+			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
@@ -197,7 +200,7 @@ data:extend(
 			type = "recipe",
 			name = "yir_kr_green",
 			category = "yir_rc_wsl", -- Workshop for Locomotives
-			enabled = "true",
+			enabled = true,
 			energy_required = 5.00,
 			ingredients = {			
 				{type = "item", name = "yir_frame_loco_steam", amount = 1.0},
@@ -255,8 +258,9 @@ data:extend(
 				{type = "physical", decrease = 15, percent = 30},
 				{type = "impact", decrease = 50, percent = 60}
 			},
-			burner = {
-				fuel_category = "chemical",
+			energy_source = {
+				type = "burner",
+				fuel_categories = {"chemical"},
 				effectivity = 1.1,
 				fuel_inventory_size = 2,
 				smoke = {
@@ -307,6 +311,7 @@ data:extend(
 			--back_light = rolling_stock_back_light(),
 			--stand_by_light = rolling_stock_stand_by_light(),
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 512,
 				height = 512,
@@ -326,14 +331,15 @@ data:extend(
 				lines_per_file = 4,
 				shift = {0, -1.125}
 			},
+			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
@@ -394,7 +400,7 @@ data:extend(
 			type = "recipe",
 			name = "yir_loco_steam_wt580of",
 			category = "yir_rc_wsl", -- Workshop for Locomotives
-			enabled = "true",
+			enabled = true,
 			energy_required = 5.00,
 			ingredients = {
 				{type = "item", name = "yir_frame_loco_steam", amount = 1.0},
@@ -405,7 +411,7 @@ data:extend(
 			results = {
 				{type = "item", name = "yir_loco_steam_wt580of", amount = 1}
 			},
-			main_product = "yir_loco_steam_wt580o",
+			main_product = "yir_loco_steam_wt580of",
 			order = "lsw6",
 			group = "yuoki_railway",
 			subgroup = "yir_locomotives_steam"
@@ -452,8 +458,9 @@ data:extend(
 				{type = "physical", decrease = 15, percent = 30},
 				{type = "impact", decrease = 50, percent = 60}
 			},
-			burner = {
-				fuel_category = "yr_diesel",
+			energy_source = {
+				type = "burner",
+				fuel_categories = {"yr_diesel"},
 				effectivity = 1.1,
 				fuel_inventory_size = 3,
 				smoke = {
@@ -504,6 +511,7 @@ data:extend(
 			--back_light = rolling_stock_back_light(),
 			--stand_by_light = rolling_stock_stand_by_light(),
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 512,
 				height = 512,
@@ -523,14 +531,15 @@ data:extend(
 				lines_per_file = 4,
 				shift = {0, -1.125}
 			},
+			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5

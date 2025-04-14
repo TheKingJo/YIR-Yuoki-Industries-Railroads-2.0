@@ -6,7 +6,7 @@ data:extend(
 			type = "recipe",
 			name = "yir_cw_cargo_green",
 			category = "yir_rc_wsw", -- Workshop for Locomotives
-			enabled = "true",
+			enabled = true,
 			energy_required = 3.00,
 			ingredients = {
 				{type = "item", name = "yir_frame_waggon", amount = 1},
@@ -64,6 +64,7 @@ data:extend(
 			--back_light = rolling_stock_back_light(),
 			--stand_by_light = rolling_stock_stand_by_light(),
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 256,
 				height = 256,
@@ -73,15 +74,16 @@ data:extend(
 				line_length = 8,
 				lines_per_file = 8,
 				shift = {0.42, -1.125}
+				},
 			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
@@ -107,7 +109,7 @@ data:extend(
 			type = "recipe",
 			name = "yir_cw_cargo_blue",
 			category = "yir_rc_wsw", -- Workshop for Locomotives
-			enabled = "true",
+			enabled = true,
 			energy_required = 3.00,
 			ingredients = {
 				{type = "item", name = "yir_frame_waggon", amount = 1},
@@ -165,6 +167,7 @@ data:extend(
 			--back_light = rolling_stock_back_light(),
 			--stand_by_light = rolling_stock_stand_by_light(),
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 256,
 				height = 256,
@@ -174,15 +177,16 @@ data:extend(
 				line_length = 8,
 				lines_per_file = 8,
 				shift = {0.42, -1.125}
+				},
 			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
@@ -209,7 +213,7 @@ data:extend(
 			type = "recipe",
 			name = "z_yira_4a_cw_yiblue",
 			category = "yir_rc_wsw", -- Workshop for Cargo Wagons
-			enabled = "true",
+			enabled = true,
 			energy_required = 4.00,
 			ingredients = {
 				{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -260,6 +264,7 @@ data:extend(
 			vertical_selection_shift = -0.8,
 			energy_per_hit_point = 5,
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 256,
 				height = 256,
@@ -272,14 +277,15 @@ data:extend(
 				lines_per_file = 8,
 				shift = {0.42, -1.125}
 			},
+			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
@@ -306,7 +312,7 @@ data:extend(
 			type = "recipe",
 			name = "z_yira_4a_cw_yigreen",
 			category = "yir_rc_wsw", -- Workshop for Cargo Wagons
-			enabled = "true",
+			enabled = true,
 			energy_required = 4.00,
 			ingredients = {
 				{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -357,6 +363,7 @@ data:extend(
 			vertical_selection_shift = -0.8,
 			energy_per_hit_point = 5,
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 512,
 				height = 512,
@@ -373,14 +380,15 @@ data:extend(
 				lines_per_file = 4,
 				shift = {0, -0.5}
 			},
+			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
@@ -407,7 +415,7 @@ data:extend(
 			type = "recipe",
 			name = "z_yira_4a_cw_kisten",
 			category = "yir_rc_wsw", -- Workshop for Cargo Wagons
-			enabled = "true",
+			enabled = true,
 			energy_required = 4.00,
 			ingredients = {
 				{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -459,6 +467,7 @@ data:extend(
 			vertical_selection_shift = -0.8,
 			energy_per_hit_point = 5,
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 256,
 				height = 256,
@@ -471,14 +480,15 @@ data:extend(
 				lines_per_file = 8,
 				shift = {0.42, -1.125}
 			},
+			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
@@ -505,7 +515,7 @@ data:extend(
 			type = "recipe",
 			name = "z_yira_4a_cw_stuff1",
 			category = "yir_rc_wsw", -- Workshop for Cargo Wagons
-			enabled = "true",
+			enabled = true,
 			energy_required = 4.00,
 			ingredients = {
 				{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -556,6 +566,7 @@ data:extend(
 			vertical_selection_shift = -0.8,
 			energy_per_hit_point = 5,
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 256,
 				height = 256,
@@ -568,14 +579,15 @@ data:extend(
 				lines_per_file = 8,
 				shift = {0.42, -1.125}
 			},
+			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5

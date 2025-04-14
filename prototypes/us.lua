@@ -7,7 +7,7 @@ data:extend(
 		type = "recipe",
 		name = "yir_usl",
 		category = "yir_rc_wsl", -- Workshop for Locomotives
-		enabled = "true",
+		enabled = true,
 		energy_required = 5.00,
 		ingredients = {			
 			{ type = "item", name = "yir_frame_loco_diesel" , amount = 1.0, },			
@@ -58,9 +58,10 @@ data:extend(
 			{type = "impact",decrease = 50,percent = 60},
 		},
 		
-		burner =
+		energy_source =
 		{
-			fuel_category = "chemical",
+			type = "burner",
+			fuel_categories = {"chemical"},
 			effectivity = 1,
 			fuel_inventory_size = 3,
 			smoke =
@@ -116,6 +117,7 @@ data:extend(
 		--stand_by_light = rolling_stock_stand_by_light(),		
 		pictures =
 		{
+			rotated = {
 			priority = "very-low",
 			width = 256, height = 256, direction_count = 128, line_length = 8, lines_per_file = 8,
 			filenames =
@@ -125,6 +127,7 @@ data:extend(
 			},
 			scale = 1,			
 			shift = {0, -0.625}
+		},
 		},
 
 		wheels = no_wheels,
@@ -189,7 +192,7 @@ data:extend(
 		type = "recipe",
 		name = "yir_us_cargo",
 		category = "yir_rc_wsw", -- Workshop for Locomotives
-		enabled = "true",
+		enabled = true,
 		energy_required = 3.00,
 		ingredients = {			
 			{ type = "item", name = "yir_frame_waggon" , amount = 1.0, },			
@@ -244,6 +247,7 @@ data:extend(
 		
 		pictures =
 		{
+			rotated = {
 			priority = "very-low",
 			width = 256, height = 256, direction_count = 64, line_length = 8, lines_per_file = 8,
 			filenames =
@@ -253,7 +257,8 @@ data:extend(
 			},
 			scale = 1,			
 			back_equals_front = true,
-			shift = {0, -0.625}			
+			shift = {0, -0.625}	
+		},
 		},
 		
 		horizontal_doors =
