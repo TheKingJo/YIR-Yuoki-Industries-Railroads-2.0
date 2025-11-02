@@ -34,7 +34,7 @@ data:extend({
 		subgroup = "yir_loco_big",
 		order = "a6",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "y_loco_diesel_620"
 	},
 	{
@@ -45,7 +45,7 @@ data:extend({
 		subgroup = "yir_loco_big",
 		order = "d3",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result="yir_lsw_r790orange",
 	},
 	{
@@ -56,7 +56,7 @@ data:extend({
 		subgroup = "yir_loco_big",
 		order = "d3",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result="yir_lsw_r790red",
 	},
 	{
@@ -67,7 +67,7 @@ data:extend({
 		subgroup = "yir_loco_big",
 		order = "d3",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result="yir_lsw_840green",
 	},
 	{
@@ -100,7 +100,7 @@ data:extend({
 		subgroup = "yir_loco_big",
 		order = "d3",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_mre044"
 	},
 	{
@@ -111,7 +111,7 @@ data:extend({
 		subgroup = "yir_loco_big",
 		order = "d7",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_kr_green"
 	},
 	{
@@ -122,7 +122,7 @@ data:extend({
 		subgroup = "yir_loco_big",
 		order = "d6",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_loco_steam_wt580of"
 	},
 })
@@ -136,7 +136,7 @@ data:extend({
 		subgroup = "yir_fluidwagons",
 		order = "cw1",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_cargo_green"
 	},
 	{
@@ -147,7 +147,7 @@ data:extend({
 		subgroup = "yir_fluidwagons",
 		order = "cw2",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_cargo_blue"
 	},
 })
@@ -161,7 +161,7 @@ data:extend({
 		subgroup = "yir_cargowagons",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result="z_yira_4a_cw_steel",
 	},
 	{
@@ -172,7 +172,7 @@ data:extend({
 		subgroup = "yir_cargowagons",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_6a_maai1"
 	},
 	{
@@ -183,7 +183,7 @@ data:extend({
 		subgroup = "yir_cargowagons",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "y_3acw_T10K"
 	},
 	{
@@ -194,7 +194,7 @@ data:extend({
 		subgroup = "yir_cargowagons",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_yiblue"
 	},
 	{
@@ -205,7 +205,7 @@ data:extend({
 		subgroup = "yir_cargowagons",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_yigreen"
 	},
 	{
@@ -216,7 +216,7 @@ data:extend({
 		subgroup = "yir_cargowagons",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_kisten"
 	},
 	{
@@ -227,7 +227,7 @@ data:extend({
 		subgroup = "yir_cargowagons",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_stuff1"
 	},
 	{
@@ -238,7 +238,7 @@ data:extend({
 		subgroup = "yir_yuoki_rails_cargo",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_energy"
 	},
 	{
@@ -249,7 +249,7 @@ data:extend({
 		subgroup = "yir_yuoki_rails_cargo",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_eb1"
 	},
 	{
@@ -260,7 +260,7 @@ data:extend({
 		subgroup = "yir_yuoki_rails_cargo",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_gears"
 	},
 	{
@@ -271,7 +271,7 @@ data:extend({
 		subgroup = "yir_yuoki_rails_cargo",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_kiste1"
 	},
 	{
@@ -282,7 +282,7 @@ data:extend({
 		subgroup = "yir_yuoki_rails_cargo",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_ziegelgrau"
 	},
 	{
@@ -293,7 +293,7 @@ data:extend({
 		subgroup = "yir_yuoki_rails_cargo",
 		order = "a",
 		stack_size = 10,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "z_yira_4a_cw_ziegelrot"
 	},
 })

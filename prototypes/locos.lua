@@ -4,7 +4,8 @@ data:extend({
 	{
 		type = "locomotive",
 		name = "yir_lsw_840green",
-		icon = "__z_yira_yuokirails__/graphics/icons/sw-green-icon.png",icon_size = 32,
+		icon = "__z_yira_yuokirails__/graphics/icons/sw-green-icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_lsw_840green"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -152,7 +153,8 @@ data:extend({
 	{
 		type = "locomotive",
 		name = "yir_ns2200wr",
-		icon = "__z_yira_yuokirails__/graphics/icons/ns2200wr_icon.png",icon_size = 64,
+		icon = "__z_yira_yuokirails__/graphics/icons/ns2200wr_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_ns2200wr"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -298,7 +300,8 @@ data:extend({
 	{
 		type = "locomotive",
 		name = "yir_ns2200gg",
-		icon = "__z_yira_yuokirails__/graphics/icons/ns2200gg_icon.png",icon_size = 64,
+		icon = "__z_yira_yuokirails__/graphics/icons/ns2200gg_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_ns2200gg"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -446,7 +449,7 @@ data:extend({
 		type = "locomotive",
 		name = "y_loco_diesel_620",
 		icon = "__z_yira_yuokirails__/graphics/icons/LOK_D1_icon.png",
-		icon_size = 32,
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "y_loco_diesel_620"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -592,7 +595,8 @@ data:extend({
 	{
 		type = "locomotive",
 		name = "yir_lsw_r790orange",
-		icon = "__z_yira_yuokirails__/graphics/icons/sw-orange-icon.png",icon_size = 32,
+		icon = "__z_yira_yuokirails__/graphics/icons/sw-orange-icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_lsw_r790orange"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -736,7 +740,8 @@ data:extend({
 	{
 		type = "locomotive",
 		name = "yir_lsw_r790red",
-		icon = "__z_yira_yuokirails__/graphics/icons/sw-dkred-icon.png",icon_size = 32,
+		icon = "__z_yira_yuokirails__/graphics/icons/sw-dkred-icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_lsw_r790red"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
