@@ -43,8 +43,6 @@ data:extend({
 			shift = {0, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -99,8 +97,6 @@ data:extend({
 			shift = {0, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -155,8 +151,6 @@ data:extend({
 			shift = {0, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -211,8 +205,6 @@ data:extend({
 			shift = {0, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -267,8 +259,6 @@ data:extend({
 			shift = {0, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -323,8 +313,6 @@ data:extend({
 			shift = {0, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -375,8 +363,6 @@ data:extend({
 			shift = {0.42, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -431,8 +417,6 @@ data:extend({
 			shift = {0, -0.5}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -483,8 +467,6 @@ data:extend({
 			shift = {0.42, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -535,8 +517,6 @@ data:extend({
 			shift = {0.42, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -588,8 +568,6 @@ data:extend({
 			shift = {0.42, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
@@ -637,8 +615,6 @@ data:extend({
 			shift = {0.42, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		crash_trigger = crash_trigger(),
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
@@ -682,8 +658,6 @@ data:extend({
 			shift = {0.42, -1.125}
 		},
 		},
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound = {
 			sound = {
