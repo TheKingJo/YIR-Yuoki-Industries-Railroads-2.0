@@ -1,5 +1,9 @@
 local modname = "__z_yira_yuokirails__"
 local item_sounds = require("__base__.prototypes.item_sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
+local functions = require("lib.functions")
+local vanillaResistance = data.raw["cargo-wagon"]["cargo-wagon"].resistances
+local balancingTypes = require("__yi_railway__.prototypes.z_balancing_types")
 
 local entityData = {
 	locomotive = {
@@ -37,15 +41,15 @@ local entityData = {
 local itemData = {
 	large = {
 		"yir_usl",
-		"yir_lsw_840green",
-		"yir_ns2200wr",
-		"yir_ns2200gg",
-		"y_loco_diesel_620",
-		"yir_lsw_r790orange",
-		"yir_lsw_r790red",
-		"yir_kr_green",
 		"yir_mre044",
 		"yir_loco_steam_wt580of",
+		"yir_kr_green",--steams
+		"yir_lsw_r790orange",
+		"yir_lsw_r790red",
+		"yir_lsw_840green",--diesel2
+		"y_loco_diesel_620",
+		"yir_ns2200wr",
+		"yir_ns2200gg",--diesel3
 
 		"yir_us_cargo",
 		"yir_cw_cargo_green",
@@ -148,6 +152,8 @@ for type, typeData in pairs(entityData) do
 		local item = data.raw["item"][name]
 
 		if vehicle ~= nil then
+			vehicle.crash_trigger = functions.crash_trigger
+			vehicle.drive_over_tie_trigger = functions.yir_drive_over_tie
 			vehicle.pictures = makePictures(datas)
 			vehicle.minimap_representation = data.raw[type][type].minimap_representation
 			vehicle.selected_minimap_representation = data.raw[type][type].selected_minimap_representation
@@ -156,6 +162,9 @@ for type, typeData in pairs(entityData) do
 			if type == "locomotive" then
 				vehicle.max_health = 0.5 * vehicle.weight
 				vehicle.stop_trigger = data.raw[type][type].stop_trigger
+			else
+				vehicle.resistances = vanillaResistance
+				vehicle.working_sound = sounds.train_wagon_wheels
 			end
 		end
 
@@ -168,52 +177,6 @@ for type, typeData in pairs(entityData) do
 		log(name.." changed")
 	end
 end
-local resistance = {
-	{
-		type = "fire",
-		decrease = 15,
-		percent = 50
-	},
-	{
-		type = "physical",
-		decrease = 15,
-		percent = 30
-	},
-	{
-		type = "impact",
-		decrease = 50,
-		percent = 50
-	},
-	{
-		type = "explosion",
-		decrease = 15,
-		percent = 30
-	},
-	{
-		type = "acid",
-		decrease = 3,
-		percent = 20
-	},
-	{
-		type = "laser",
-		decrease = 10,
-		percent = 20
-	},
-	{
-		type = "electric",
-		decrease = 5,
-		percent = 20
-	}
-}
-local workingSoundDiesel = data.raw["locomotive"]["locomotive"].working_sound
-
-local stats1 = {
-	diesel = {resistances = resistance, max_speed = 0.9, max_power = "900kW", braking_force = 12,
-	friction_force = 0.0040, air_resistance = 0.005,  energy_per_hit_point = 6, reversing_power_modifier = 0.6, working_sound = workingSoundDiesel},
-}
-local stats2 = {
-	diesel = {fuel_inventory_size = 3, effectivity = 0.90},
-}
 
 local function adjustStats(name, stat)
 	local lok = data.raw["locomotive"][name]
@@ -221,12 +184,23 @@ local function adjustStats(name, stat)
 	if not lok then
 		return
 	end
-	for k, v in pairs(stats1[stat]) do
+	for k, v in pairs(balancingTypes.stats1[stat]) do
 		lok[k] = v
 	end
-	for k, v in pairs(stats2[stat]) do
+	for k, v in pairs(balancingTypes.stats2[stat]) do
 		lok.energy_source[k] = v
 	end
 end
 
---adjustStats("yir_emdf7a_mn", "diesel")
+adjustStats("yir_usl", "steam1")
+adjustStats("yir_mre044", "steam1")
+adjustStats("yir_loco_steam_wt580of", "steam2")
+adjustStats("yir_kr_green", "steam3")
+
+adjustStats("yir_lsw_r790orange", "diesel2")
+adjustStats("yir_lsw_r790red", "diesel2")
+adjustStats("yir_lsw_840green", "diesel2")
+
+adjustStats("y_loco_diesel_620", "diesel3")
+adjustStats("yir_ns2200wr", "diesel3")
+adjustStats("yir_ns2200gg", "diesel3")

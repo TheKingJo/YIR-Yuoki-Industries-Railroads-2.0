@@ -1,4 +1,4 @@
-functions = require("lib.functions")
+local functions = require("lib.functions")
 
 data:extend({
 	{
@@ -7,7 +7,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/usl_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "yir_usl"},
+		minable = {mining_time = 0.5, result = "yir_usl"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1400,
 		corpse = "medium-remnants",
@@ -16,7 +16,7 @@ data:extend({
 		selection_box = {{-0.7, -1.6}, {1, 1.2}},
 		drawing_box = {{-1, -1}, {1, 1}},
 		weight = 500,
-		max_speed = 0.6,
+		max_speed = 1,
 		max_power = "200kW",
 		reversing_power_modifier = 0.8,
 		braking_force = 10,
@@ -85,27 +85,7 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		pictures =
-		{
-			rotated =
-			{
-				priority = "very-low",
-				width = 256, height = 256, direction_count = 128, line_length = 8, lines_per_file = 8,
-				filenames =
-				{
-					"__z_yira_yuokirails__/graphics/usl_sheet-0.png",
-					"__z_yira_yuokirails__/graphics/usl_sheet-1.png",
-				},
-				scale = 1,
-				shift = {0, -0.625}
-			},
-		},
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	},
 	{
 		type = "locomotive",
@@ -113,7 +93,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/sw-green-icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "yir_lsw_840green"},
+		minable = {mining_time = 0.5, result = "yir_lsw_840green"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1400,
 		corpse = "medium-remnants",
@@ -122,7 +102,7 @@ data:extend({
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
 		weight = 1900,
-		max_speed = 0.556,
+		max_speed = 1,
 		max_power = "840kW",
 		reversing_power_modifier = 0.8,
 		braking_force = 14,
@@ -191,33 +171,7 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		pictures =
-		{
-			rotated =
-			{
-				priority = "very-low",
-				width = 512, height = 512, direction_count = 128, line_length = 4, lines_per_file = 4,
-				filenames =
-				{
-					"__z_yira_yuokirails__/graphics/sw_green_hr_sheet-0.png",
-					"__z_yira_yuokirails__/graphics/sw_green_hr_sheet-1.png",
-					"__z_yira_yuokirails__/graphics/sw_green_hr_sheet-2.png",
-					"__z_yira_yuokirails__/graphics/sw_green_hr_sheet-3.png",
-					"__z_yira_yuokirails__/graphics/sw_green_hr_sheet-4.png",
-					"__z_yira_yuokirails__/graphics/sw_green_hr_sheet-5.png",
-					"__z_yira_yuokirails__/graphics/sw_green_hr_sheet-6.png",
-					"__z_yira_yuokirails__/graphics/sw_green_hr_sheet-7.png",
-				},
-				scale = 0.5,
-				shift = {0.42, -1.125}
-			},
-		},
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	},
 	{
 		type = "locomotive",
@@ -225,7 +179,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/ns2200wr_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "yir_ns2200wr"},
+		minable = {mining_time = 0.5, result = "yir_ns2200wr"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1400,
 		corpse = "medium-remnants",
@@ -234,7 +188,7 @@ data:extend({
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
 		weight = 2200,
-		max_speed = 0.833,
+		max_speed = 1,
 		max_power = "1000kW",
 		reversing_power_modifier = 0.8,
 		braking_force = 16,
@@ -303,32 +257,7 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 512, height = 512, direction_count = 128, line_length = 4, lines_per_file = 4,
-			filenames =
-			{
-				"__z_yira_yuokirails__/graphics/ns2200wr_sheet-0.png",
-				"__z_yira_yuokirails__/graphics/ns2200wr_sheet-1.png",
-				"__z_yira_yuokirails__/graphics/ns2200wr_sheet-2.png",
-				"__z_yira_yuokirails__/graphics/ns2200wr_sheet-3.png",
-				"__z_yira_yuokirails__/graphics/ns2200wr_sheet-4.png",
-				"__z_yira_yuokirails__/graphics/ns2200wr_sheet-5.png",
-				"__z_yira_yuokirails__/graphics/ns2200wr_sheet-6.png",
-				"__z_yira_yuokirails__/graphics/ns2200wr_sheet-7.png",
-			},
-			scale = 0.5,
-			shift = {0, -1.125}
-		},
-		},
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	},
 	{
 		type = "locomotive",
@@ -336,7 +265,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/ns2200gg_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "yir_ns2200gg"},
+		minable = {mining_time = 0.5, result = "yir_ns2200gg"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1400,
 		corpse = "medium-remnants",
@@ -345,7 +274,7 @@ data:extend({
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
 		weight = 2300,
-		max_speed = 0.787,
+		max_speed = 1,
 		max_power = "1100kW",
 		reversing_power_modifier = 0.8,
 		braking_force = 17,
@@ -415,32 +344,7 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 512, height = 512, direction_count = 128, line_length = 4, lines_per_file = 4,
-			filenames =
-			{
-				"__z_yira_yuokirails__/graphics/ns2200gg_sheet-0.png",
-				"__z_yira_yuokirails__/graphics/ns2200gg_sheet-1.png",
-				"__z_yira_yuokirails__/graphics/ns2200gg_sheet-2.png",
-				"__z_yira_yuokirails__/graphics/ns2200gg_sheet-3.png",
-				"__z_yira_yuokirails__/graphics/ns2200gg_sheet-4.png",
-				"__z_yira_yuokirails__/graphics/ns2200gg_sheet-5.png",
-				"__z_yira_yuokirails__/graphics/ns2200gg_sheet-6.png",
-				"__z_yira_yuokirails__/graphics/ns2200gg_sheet-7.png",
-			},
-			scale = 0.5,
-			shift = {0, -1.125}
-		},
-		},
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	},
 	{
 		type = "locomotive",
@@ -448,7 +352,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/LOK_D1_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "y_loco_diesel_620"},
+		minable = {mining_time = 0.5, result = "y_loco_diesel_620"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 900,
 		corpse = "medium-remnants",
@@ -459,7 +363,7 @@ data:extend({
 		connection_distance = 3,
 		joint_distance = 4,
 		weight = 1500,
-		max_speed = 0.648,
+		max_speed = 1,
 		max_power = "620kW",
 		reversing_power_modifier = 0.7,
 		braking_force = 9,
@@ -524,35 +428,8 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		pictures = {
-			rotated = {
-			priority = "very-low",
-			width = 512,
-			height = 512,
-			scale = 0.5,
-			direction_count = 128,
-			filenames = {
-				"__z_yira_yuokirails__/graphics/LOK_D1_sheet-0.png",
-				"__z_yira_yuokirails__/graphics/LOK_D1_sheet-1.png",
-				"__z_yira_yuokirails__/graphics/LOK_D1_sheet-2.png",
-				"__z_yira_yuokirails__/graphics/LOK_D1_sheet-3.png",
-				"__z_yira_yuokirails__/graphics/LOK_D1_sheet-4.png",
-				"__z_yira_yuokirails__/graphics/LOK_D1_sheet-5.png",
-				"__z_yira_yuokirails__/graphics/LOK_D1_sheet-6.png",
-				"__z_yira_yuokirails__/graphics/LOK_D1_sheet-7.png"
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0, -1.125}
-		},
-		},
 		tie_distance = 50,
 		vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	},
 	{
 		type = "locomotive",
@@ -560,7 +437,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/sw-orange-icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "yir_lsw_r790orange"},
+		minable = {mining_time = 0.5, result = "yir_lsw_r790orange"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1300,
 		corpse = "medium-remnants",
@@ -569,9 +446,8 @@ data:extend({
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
-
 		weight = 1800,
-		max_speed = 0.486,
+		max_speed = 1,
 		max_power = "750kW",
 		reversing_power_modifier = 0.8,
 		braking_force = 12,
@@ -639,29 +515,7 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames =
-			{
-				"__z_yira_yuokirails__/graphics/sw-orange_sheet-0.png",
-				"__z_yira_yuokirails__/graphics/sw-orange_sheet-1.png",
-			},
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-		},
-		},
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	},
 	{
 		type = "locomotive",
@@ -669,7 +523,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/sw-dkred-icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "yir_lsw_r790red"},
+		minable = {mining_time = 0.5, result = "yir_lsw_r790red"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1500,
 		corpse = "medium-remnants",
@@ -678,7 +532,7 @@ data:extend({
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
 		weight = 2000,
-		max_speed = 0.741,
+		max_speed = 1,
 		max_power = "790kW",
 		reversing_power_modifier = 0.8,
 		braking_force = 10,
@@ -748,30 +602,7 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		pictures =
-		{
-			rotated =
-			{
-				priority = "very-low",
-				width = 256,
-				height = 256,
-				direction_count = 128,
-				filenames =
-				{
-					"__z_yira_yuokirails__/graphics/sw-dkred_sheet-0.png",
-					"__z_yira_yuokirails__/graphics/sw-dkred_sheet-1.png",
-				},
-				line_length = 8,
-				lines_per_file = 8,
-				shift = {0.42, -1.125}
-			},
-		},
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	},
 	{
 		type = "locomotive",
@@ -779,7 +610,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/sel_dkred_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "yir_mre044"},
+		minable = {mining_time = 0.5, result = "yir_mre044"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
 		corpse = "medium-remnants",
@@ -790,7 +621,7 @@ data:extend({
 		connection_distance = 3,
 		joint_distance = 4,
 		weight = 800,
-		max_speed = 0.394,
+		max_speed = 1,
 		max_power = "550kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 12,
@@ -852,27 +683,7 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		pictures = {
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames = {
-				"__z_yira_yuokirails__/graphics/sel_dkred-0.png",
-				"__z_yira_yuokirails__/graphics/sel_dkred-1.png"
-			},
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-		},
-		},
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	},
 	{
 		type = "locomotive",
@@ -880,7 +691,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/se_krgreen_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "yir_kr_green"},
+		minable = {mining_time = 0.5, result = "yir_kr_green"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
 		corpse = "medium-remnants",
@@ -891,7 +702,7 @@ data:extend({
 		connection_distance = 3,
 		joint_distance = 4,
 		weight = 1600,
-		max_speed = 1.019,
+		max_speed = 1,
 		max_power = "1150kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 18,
@@ -953,34 +764,7 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		pictures = {
-			rotated = {
-			priority = "very-low",
-			width = 512,
-			height = 512,
-			scale = 0.5,
-			direction_count = 128,
-			filenames = {
-				"__z_yira_yuokirails__/graphics/se_krgreen_sheet-0.png",
-				"__z_yira_yuokirails__/graphics/se_krgreen_sheet-1.png",
-				"__z_yira_yuokirails__/graphics/se_krgreen_sheet-2.png",
-				"__z_yira_yuokirails__/graphics/se_krgreen_sheet-3.png",
-				"__z_yira_yuokirails__/graphics/se_krgreen_sheet-4.png",
-				"__z_yira_yuokirails__/graphics/se_krgreen_sheet-5.png",
-				"__z_yira_yuokirails__/graphics/se_krgreen_sheet-6.png",
-				"__z_yira_yuokirails__/graphics/se_krgreen_sheet-7.png"
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0, -1.125}
-		},
-		},
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	},
 	{
 		type = "locomotive",
@@ -988,7 +772,7 @@ data:extend({
 		icon = "__z_yira_yuokirails__/graphics/icons/se_wt580of_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 1, result = "yir_loco_steam_wt580of"},
+		minable = {mining_time = 0.5, result = "yir_loco_steam_wt580of"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
 		corpse = "medium-remnants",
@@ -999,7 +783,7 @@ data:extend({
 		connection_distance = 3,
 		joint_distance = 4,
 		weight = 1450,
-		max_speed = 0.648,
+		max_speed = 1,
 		max_power = "580kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 8,
@@ -1061,33 +845,6 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		pictures = {
-			rotated = {
-			priority = "very-low",
-			width = 512,
-			height = 512,
-			scale = 0.5,
-			direction_count = 128,
-			filenames = {
-				"__z_yira_yuokirails__/graphics/se_wt580of_sheet-0.png",
-				"__z_yira_yuokirails__/graphics/se_wt580of_sheet-1.png",
-				"__z_yira_yuokirails__/graphics/se_wt580of_sheet-2.png",
-				"__z_yira_yuokirails__/graphics/se_wt580of_sheet-3.png",
-				"__z_yira_yuokirails__/graphics/se_wt580of_sheet-4.png",
-				"__z_yira_yuokirails__/graphics/se_wt580of_sheet-5.png",
-				"__z_yira_yuokirails__/graphics/se_wt580of_sheet-6.png",
-				"__z_yira_yuokirails__/graphics/se_wt580of_sheet-7.png"
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0, -1.125}
-		},
-		},
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 	}
 })
