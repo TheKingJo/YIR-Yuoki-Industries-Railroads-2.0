@@ -4,7 +4,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_usl",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "yir_frame_loco_diesel" , amount = 1},
@@ -19,7 +19,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_us_cargo",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 3,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon" , amount = 1},
@@ -38,7 +38,7 @@ data:extend({
 		type = "recipe",
 		name = "y_loco_diesel_620",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
@@ -56,7 +56,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_lsw_r790orange",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "yir_frame_loco_diesel" , amount = 2},
@@ -73,7 +73,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_lsw_r790red",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "yir_frame_loco_diesel" , amount = 2},
@@ -90,7 +90,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_lsw_840green",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "yir_frame_loco_diesel" , amount = 2},
@@ -106,7 +106,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_ns2200wr",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "yir_frame_loco_diesel" , amount = 2},
@@ -122,7 +122,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_ns2200gg",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "yir_frame_loco_diesel" , amount = 2},
@@ -139,7 +139,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_mre044",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "steam-engine", amount = 2},
@@ -155,7 +155,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_kr_green",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "yir_frame_loco_steam", amount = 1},
@@ -171,7 +171,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_loco_steam_wt580of",
 		category = "yir_rc_wsl",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients = {
 			{type = "item", name = "yir_frame_loco_steam", amount = 1},
@@ -191,7 +191,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_cw_cargo_green",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 3,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 1},
@@ -206,7 +206,7 @@ data:extend({
 		type = "recipe",
 		name = "yir_cw_cargo_blue",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 3,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 1},
@@ -224,7 +224,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_steel",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 3,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -235,13 +235,12 @@ data:extend({
 		results = {
 			{type = "item", name = "z_yira_4a_cw_steel", amount = 1},
 		},
-		order = "std-a", group = "yuoki_railway", subgroup = "yir_cargowagons",
 	},
 	{
 		type = "recipe",
 		name = "z_yira_6a_maai1",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 3,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -257,7 +256,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_yiblue",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -272,7 +271,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_yigreen",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -287,7 +286,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_kisten",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -303,7 +302,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_stuff1",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -318,7 +317,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_energy",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -334,7 +333,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_eb1",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -350,7 +349,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_gears",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -366,7 +365,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_kiste1",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -382,7 +381,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_ziegelgrau",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
@@ -398,7 +397,7 @@ data:extend({
 		type = "recipe",
 		name = "z_yira_4a_cw_ziegelrot",
 		category = "yir_rc_wsw",
-		enabled = true,
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
