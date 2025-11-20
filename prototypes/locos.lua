@@ -6,12 +6,7 @@ data:extend({
 		name = "yir_usl",
 		icon = "__z_yira_yuokirails__/graphics/icons/usl_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_usl"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.7, -1.6}, {1, 1.2}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -23,7 +18,8 @@ data:extend({
 		friction_force = 0.5,
 		air_resistance = 0.00225,
 		vertical_selection_shift = -0.5,
-		connection_distance = 2.2, joint_distance = 1.1,
+		connection_distance = 2.2, 
+		joint_distance = 1.1,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -85,19 +81,13 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		tie_distance = 50,
 	},
 	{
 		type = "locomotive",
 		name = "yir_lsw_840green",
 		icon = "__z_yira_yuokirails__/graphics/icons/sw-green-icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_lsw_840green"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
@@ -109,7 +99,8 @@ data:extend({
 		friction_force = 0.5,
 		air_resistance = 0.00225,
 		vertical_selection_shift = -0.5,
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -171,19 +162,13 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		tie_distance = 50,
 	},
 	{
 		type = "locomotive",
 		name = "yir_ns2200wr",
 		icon = "__z_yira_yuokirails__/graphics/icons/ns2200wr_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_ns2200wr"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
@@ -195,7 +180,8 @@ data:extend({
 		friction_force = 0.5,
 		air_resistance = 0.00225,
 		vertical_selection_shift = -0.5,
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -257,19 +243,13 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		tie_distance = 50,
 	},
 	{
 		type = "locomotive",
 		name = "yir_ns2200gg",
 		icon = "__z_yira_yuokirails__/graphics/icons/ns2200gg_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_ns2200gg"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
@@ -281,7 +261,8 @@ data:extend({
 		friction_force = 0.5,
 		air_resistance = 0.00225,
 		vertical_selection_shift = -0.5,
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -344,19 +325,13 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		tie_distance = 50,
 	},
 	{
 		type = "locomotive",
 		name = "y_loco_diesel_620",
 		icon = "__z_yira_yuokirails__/graphics/icons/LOK_D1_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_diesel_620"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 900,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
@@ -428,24 +403,18 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		tie_distance = 50,
-		vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 	{
 		type = "locomotive",
 		name = "yir_lsw_r790orange",
 		icon = "__z_yira_yuokirails__/graphics/icons/sw-orange-icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_lsw_r790orange"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1300,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 2000,
 		max_speed = 1,
 		max_power = "750kW",
@@ -515,19 +484,13 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		tie_distance = 50,
 	},
 	{
 		type = "locomotive",
 		name = "yir_lsw_r790red",
 		icon = "__z_yira_yuokirails__/graphics/icons/sw-dkred-icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_lsw_r790red"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 2000,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
@@ -602,19 +565,13 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		tie_distance = 50,
 	},
 	{
 		type = "locomotive",
 		name = "yir_mre044",
 		icon = "__z_yira_yuokirails__/graphics/icons/sel_dkred_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_mre044"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
@@ -683,19 +640,13 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		tie_distance = 50,
 	},
 	{
 		type = "locomotive",
 		name = "yir_kr_green",
 		icon = "__z_yira_yuokirails__/graphics/icons/se_krgreen_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_kr_green"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
@@ -764,19 +715,13 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		tie_distance = 50,
 	},
 	{
 		type = "locomotive",
 		name = "yir_loco_steam_wt580of",
 		icon = "__z_yira_yuokirails__/graphics/icons/se_wt580of_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_loco_steam_wt580of"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
@@ -845,6 +790,5 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		tie_distance = 50,
 	}
 })
